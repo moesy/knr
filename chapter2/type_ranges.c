@@ -6,9 +6,9 @@
  * Determine the range of char, short, int and long variables,
  * both signed and unsigned.
  */
+
 #include <stdio.h>
 #include <limits.h>
-//#include <error.h>
 
 /**
  * limits_range - Print data type ranges from limits.h
@@ -24,7 +24,6 @@ void limits_range() {
   printf("INT u:[%d, %u] s:[%d, %d]\n", 0, UINT_MAX, INT_MIN, INT_MAX);
   printf("LONG u[%d, %lu] s:[%ld, %ld]\n", 0, ULONG_MAX, LONG_MIN, LONG_MAX);
 }
-
 
 /* signed-max - Generate maximum signed value
  * @bitwidth: size of digits in bits.
@@ -71,7 +70,6 @@ void range_generator() {
   short shortType;
   int intType;
   long longType;
-
 
   int char_bitwidth = sizeof(charType) * CHAR_BIT;
   int short_bitwidth = sizeof(shortType) * CHAR_BIT;
