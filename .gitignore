@@ -1,3 +1,6 @@
+# ignore project binaries
+bin/
+
 # emacs
 *~
 \#*\#
