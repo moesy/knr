@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <error.h>
 
 #define FAHR_MAX 400
 #define FAHR_MIN -459.67
@@ -24,6 +25,9 @@ void cel_table(int lower, int upper, int step) {
 
   if (lower < CEL_MIN)
     lower = CEL_MIN;
+
+  if (step <= 0)
+    error(1, 0, "step must be > 0");
 
   celsius = lower;
 
@@ -57,6 +61,9 @@ void fahr_table(int lower, int upper, int step) {
 
   if (lower < FAHR_MIN)
     lower = FAHR_MIN;
+
+  if (step <= 0)
+    error(1, 0, "step must be > 0");
 
   fahr = lower;
 
