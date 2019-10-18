@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "utils.h"
 
 /* main - hello, world
  *
@@ -6,5 +7,6 @@
  * print "hello world".
  */
 void main() {
-  printf("hello, world");
+  //printf("hello, world");
+  cel_table(-20, 160, -20);
 }
