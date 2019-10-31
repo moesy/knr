@@ -16,7 +16,8 @@
  * Print a fahr-celsius table bound by the input parameters.
  *
  */
-void cel_table(int lower, int upper, int step, void(*print_fn)(const double, const double,  const int)) {
+void cel_table(int lower, int upper, int step,
+               void(*print_fn)(const double, const double,  const int)) {
 
   float fahr, celsius;
 
@@ -73,7 +74,7 @@ void print_cel_desc(const double lower, const double upper, const int  step) {
   double celsius = upper;
   double fahr;
 
-  printf("Celsius \t Farenheit\n");
+  printf("Celsius \t Farenheit (desc)\n");
 
   for (; celsius >= lower; celsius -= step) {
     fahr = (celsius * 9.0/5.0) + 32;

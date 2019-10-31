@@ -7,7 +7,7 @@
  * print "hello world".
  */
 void main() {
-  printf("hello, world\n");
+  printf("hello, world\n\n");
   cel_table(20, 160, 20, print_cel_asc);
   printf("\n");
   cel_table(20, 160, 20, print_cel_desc);
